@@ -9,10 +9,13 @@
 namespace Console\Controller\Creator;
 
 
-class ControllerCreator
+use Console\Classes\Constructor\ClassConstructor;
+use mysql_xdevapi\Exception;
+
+class ControllerCreator extends ClassConstructor
 {
-    private $ic = __DIR__ . '/../../app/controllers/index/';
-    private $uc = __DIR__ . '/../../app/controllers/user/';
+    private $ic = __DIR__ .'/../app/controllers/index/';
+    private $uc = __DIR__ .'/../app/controllers/user/';
 
     public $name;
 
@@ -23,19 +26,29 @@ class ControllerCreator
 
     public function indexCreator()
     {
-        $this->newCreator($this->ic);
+        $this->checkController($this->uc, self::userConstructor($this->name));
+        $this->newCreator($this->ic, self::indexConstructor($this->name));
     }
 
     public function userCreator()
     {
-        $this->newCreator($this->uc);
+        $this->checkController($this->uc, self::userConstructor($this->name));
+        $this->newCreator($this->uc, self::userConstructor($this->name));
     }
 
-    private function newCreator($path)
+    private function newCreator($path, $body)
     {
         $new_file = fopen($path.$this->name.'.php', 'w');
-                    fwrite($new_file, 'test');
+                    fwrite($new_file, $body);
                     fclose($new_file);
 
+    }
+
+    private function checkController($path, $className)
+    {
+        $file = file_exists($path.$className.'.php');
+        var_dump($file);
+
+//        if(!$file) throw new \Exception('This class already exist');
     }
 }
