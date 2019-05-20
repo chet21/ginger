@@ -18,10 +18,7 @@ class ComposerStaticInit5898b39126de691ffcf76a43f60c79e3
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
-        ),
-        'G' => 
-        array (
-            'Gumlet\\' => 7,
+            'Shasoft\\Console\\' => 16,
         ),
     );
 
@@ -34,9 +31,9 @@ class ComposerStaticInit5898b39126de691ffcf76a43f60c79e3
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Gumlet\\' => 
+        'Shasoft\\Console\\' => 
         array (
-            0 => __DIR__ . '/..' . '/gumlet/php-image-resize/lib',
+            0 => __DIR__ . '/..' . '/shasoft/console/src',
         ),
     );
 
@@ -71,7 +68,9 @@ class ComposerStaticInit5898b39126de691ffcf76a43f60c79e3
         'CallbackReturnReference' => __DIR__ . '/../..' . '/lib/phpQuery/phpQuery/Callback.php',
         'CallbackReturnValue' => __DIR__ . '/../..' . '/lib/phpQuery/phpQuery/Callback.php',
         'Console\\Classes\\Constructor\\ClassConstructor' => __DIR__ . '/../..' . '/console/constructors/ClassConstructor.php',
+        'Console\\ConsoleMessage' => __DIR__ . '/../..' . '/console/console_message/ConsoleMessage.php',
         'Console\\Controller\\Creator\\ControllerCreator' => __DIR__ . '/../..' . '/console/ControllerCreator.php',
+        'Console\\Controller\\Creator\\RoutCreator' => __DIR__ . '/../..' . '/console/RoutCreator.php',
         'DOMDocumentWrapper' => __DIR__ . '/../..' . '/lib/phpQuery/phpQuery/DOMDocumentWrapper.php',
         'DOMEvent' => __DIR__ . '/../..' . '/lib/phpQuery/phpQuery/DOMEvent.php',
         'Helper\\Hash' => __DIR__ . '/../..' . '/helper/Hash.php',
@@ -83,29 +82,24 @@ class ComposerStaticInit5898b39126de691ffcf76a43f60c79e3
         'ICallbackNamed' => __DIR__ . '/../..' . '/lib/phpQuery/phpQuery/Callback.php',
         'Lib\\Location\\UserLocation' => __DIR__ . '/../..' . '/lib/location/UserLocation.php',
         'Lib\\Location\\UserTime' => __DIR__ . '/../..' . '/lib/location/UserTime.php',
+        'Lib\\Location\\UserTranslit' => __DIR__ . '/../..' . '/lib/location/UserTranslit.php',
         'Lib\\Location\\UserWeather' => __DIR__ . '/../..' . '/lib/location/UserWeather.php',
-        'Lib\\Packeg\\BasePackeg' => __DIR__ . '/../..' . '/lib/packeg/BasePackeg.php',
         'Lib\\Parser\\BaseParser' => __DIR__ . '/../..' . '/lib/parser/BaseParser.php',
-        'Lib\\Parser\\News\\BaseNewsParser' => __DIR__ . '/../..' . '/lib/parser/news/BaseNewsParser.php',
-        'Lib\\Parser\\News\\InterfaceNewsParser' => __DIR__ . '/../..' . '/lib/parser/news/InterfaceNewsParser.php',
-        'Lib\\Parser\\News\\NewsEtceteraMedia' => __DIR__ . '/../..' . '/lib/parser/news/NewsEtceteraMedia.php',
-        'Lib\\Parser\\News\\NewsParser112' => __DIR__ . '/../..' . '/lib/parser/news/NewsParser112.php',
-        'Lib\\Parser\\News\\NewsParser24Ua' => __DIR__ . '/../..' . '/lib/parser/news/NewsParser24Ua.php',
-        'Lib\\Parser\\News\\NewsParserObozrevatel' => __DIR__ . '/../..' . '/lib/parser/news/NewsParserObozrevatel.php',
-        'Lib\\Parser\\ProxyParser' => __DIR__ . '/../..' . '/lib/parser/proxy/ProxyParser.php',
-        'Lib\\Parser\\ProxyParser2' => __DIR__ . '/../..' . '/lib/parser/proxy/ProxyParser2.php',
         'Lib\\User\\User' => __DIR__ . '/../..' . '/lib/user/User.php',
         'Migration' => __DIR__ . '/../..' . '/system/migration/Migration.php',
+        'System\\AdminOpion' => __DIR__ . '/../..' . '/lib/option/AdminOpion.php',
+        'System\\BaseOption' => __DIR__ . '/../..' . '/lib/option/BaseOption.php',
         'System\\CSRF' => __DIR__ . '/../..' . '/system/CSRF.php',
         'System\\DB' => __DIR__ . '/../..' . '/system/DB.php',
         'System\\Error' => __DIR__ . '/../..' . '/system/Error.php',
+        'System\\IndexOption' => __DIR__ . '/../..' . '/lib/option/IndexOption.php',
         'System\\Lang' => __DIR__ . '/../..' . '/system/Lang.php',
         'System\\ORM' => __DIR__ . '/../..' . '/system/ORM.php',
         'System\\Router' => __DIR__ . '/../..' . '/system/Router.php',
         'System\\Statistics' => __DIR__ . '/../..' . '/system/Statistics.php',
         'System\\TwigView' => __DIR__ . '/../..' . '/system/TwigView.php',
+        'System\\UserOption' => __DIR__ . '/../..' . '/lib/option/UserOption.php',
         'System\\Verification' => __DIR__ . '/../..' . '/system/Verification.php',
-        'ValidTag' => __DIR__ . '/../..' . '/lib/parser/valid/ValidTag.php',
         'Zend_Exception' => __DIR__ . '/../..' . '/lib/phpQuery/phpQuery/Zend/Exception.php',
         'Zend_Http_Client' => __DIR__ . '/../..' . '/lib/phpQuery/phpQuery/Zend/Http/Client.php',
         'Zend_Http_Client_Adapter_Exception' => __DIR__ . '/../..' . '/lib/phpQuery/phpQuery/Zend/Http/Client/Adapter/Exception.php',

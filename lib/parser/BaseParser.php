@@ -2,11 +2,9 @@
 
 namespace Lib\Parser;
 
-use System\DB;
-
-abstract class BaseParser extends DB
+abstract class BaseParser
 {
-    protected static function curl($url, $link = null, $proxy = null)
+    static function curl($url, $link = null, $proxy = null)
     {
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url.$link);
@@ -19,18 +17,5 @@ abstract class BaseParser extends DB
         $str = curl_exec($curl);
         curl_close($curl);
         return $str;
-    }
-
-    protected static function translit($str)
-    {
-        $str = mb_strtolower($str, 'utf-8');
-        $list = array(
-            'а' => 'a', 'б' => 'b', 'в' => 'v', 'г' => 'g', 'д' => 'd', 'е' => 'e', 'ж' => 'j',
-            'з' => 'z', 'и' => 'i', 'й' => 'y', 'к' => 'k', 'л' => 'l', 'м' => 'm',
-            'н' => 'n', 'о' => 'o', 'п' => 'p', 'р' => 'r', 'с' => 's', 'т' => 't',
-            'у' => 'u', 'ф' => 'f', 'х' => 'h', 'ч' => 'ch', 'ц' => 'ts', 'ш' => 'sh',
-            'щ' => 'shch', 'ы' => 'u', 'э' => 'e', 'ю' => 'yu', 'я' => 'ya', ' ' => '-',
-            'ъ'=> '', 'ь'=> '');
-        return strtr($str, $list);
     }
 }

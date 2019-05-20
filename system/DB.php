@@ -4,7 +4,7 @@ namespace System;
 
 use App\Configuration\BaseConfiguration;
 use App\Configuration\Init;
-use Lib\Packeg\BasePackeg;
+use Lib\Packeg\BaseOption;
 
 class DB extends BaseConfiguration
 {
@@ -41,7 +41,7 @@ class DB extends BaseConfiguration
         $x = $res->fetchAll(\PDO::FETCH_ASSOC);
 
         $st = '';
-        $pattern = '/_'.BasePackeg::current_lang().'/';
+        $pattern = '/_'.BaseOption::current_lang().'/';
 
         foreach ($x as $item){
             if(preg_match($pattern, $item['col'])){

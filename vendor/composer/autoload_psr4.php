@@ -8,5 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
-    'Gumlet\\' => array($vendorDir . '/gumlet/php-image-resize/lib'),
+    'Shasoft\\Console\\' => array($vendorDir . '/shasoft/console/src'),
 );

@@ -15,17 +15,25 @@ class Statistics
 {
     private $location;
     private $part;
+    private $http = [];
 
     public function __construct()
     {
         $this->location = new UserLocation();
         $this->part = __DIR__.'/../logs/host_logs/';
+        $this->http['HTTP_REFERER'] = ($_SERVER['HTTP_REFERER']) ?: 'undefined';
+        $this->http['REQUEST_URI'] = ($_SERVER['REQUEST_URI']) ?: 'undefined';
     }
 
     public function set_location()
     {
         $city = $this->location->getCity('ru');
-        $string = 'IP - '.$this->location->ip.' CITY - '.$city.' TIME - '.date('H:i:s').' FROM -'.$_SERVER['HTTP_REFERER'].' TO - '.$_SERVER['REQUEST_URI'];
+        $string =
+             'IP - '.$this->location->ip.
+            ' CITY - '.$city.
+            ' TIME - '.date('H:i:s').
+            ' FROM -'.$this->http['HTTP_REFERER'].
+            ' TO - '.$this->http['REQUEST_URI'];
         $this->write_log($string);
 
     }

@@ -21,7 +21,7 @@ class BaseConfiguration
         if(!empty(self::$data[$key])){
             $res = self::$data[$key];
         }else{
-            throw new \Exception('This key not exist, on cofiguration file');
+            throw new \Exception('This key does`t exist, on cofiguration file');
         }
 
         return $res;

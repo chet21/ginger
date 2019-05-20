@@ -4,40 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69c5b756cb7704afd45077bee5efe4ee",
+    "content-hash": "e46db90ce785c45b069f5ffe971e52d8",
     "packages": [
         {
-            "name": "gumlet/php-image-resize",
-            "version": "1.8.0",
+            "name": "shasoft/console",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/gumlet/php-image-resize.git",
-                "reference": "203210e94849c809bdb97fff4f803a7932e2bc62"
+                "url": "https://github.com/shasoft/console.git",
+                "reference": "3eb2ed9cce667c26f83bbeb2b80ab9364b44bfc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gumlet/php-image-resize/zipball/203210e94849c809bdb97fff4f803a7932e2bc62",
-                "reference": "203210e94849c809bdb97fff4f803a7932e2bc62",
+                "url": "https://api.github.com/repos/shasoft/console/zipball/3eb2ed9cce667c26f83bbeb2b80ab9364b44bfc2",
+                "reference": "3eb2ed9cce667c26f83bbeb2b80ab9364b44bfc2",
                 "shasum": ""
-            },
-            "require": {
-                "ext-fileinfo": "*",
-                "ext-gd": "*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "ext-exif": "*",
-                "ext-gd": "*",
-                "php-coveralls/php-coveralls": "dev-master || ^1.0",
-                "phpunit/phpunit": "^4.8"
-            },
-            "suggest": {
-                "ext-exif": "Auto-rotate jpeg files"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Gumlet\\": "lib/"
+                    "Shasoft\\Console\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -46,19 +32,20 @@
             ],
             "authors": [
                 {
-                    "name": "Aditya Patadia",
-                    "homepage": "http://aditya.patadia.org/"
+                    "name": "Valery Shabanov",
+                    "email": "dev@shasoft.com"
                 }
             ],
-            "description": "PHP class to re-size and scale images",
-            "homepage": "https://github.com/gumlet/php-image-resize",
+            "description": "Shasoft Console",
+            "homepage": "http://shasoft.com/article/klass_php_dlya_vyvoda_v_konsol_tsvetnogo_teksta",
             "keywords": [
-                "image",
-                "php",
-                "resize",
-                "scale"
+                "color",
+                "colors",
+                "console",
+                "output",
+                "text"
             ],
-            "time": "2018-02-10T05:20:52+00:00"
+            "time": "2018-12-06T08:55:20+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -124,12 +111,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "2a8fa6369000ade6d283b18c586a174ca4a2bd48"
+                "reference": "571929f263d56590ddd6cf42e860264d26f07e51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/2a8fa6369000ade6d283b18c586a174ca4a2bd48",
-                "reference": "2a8fa6369000ade6d283b18c586a174ca4a2bd48",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/571929f263d56590ddd6cf42e860264d26f07e51",
+                "reference": "571929f263d56590ddd6cf42e860264d26f07e51",
                 "shasum": ""
             },
             "require": {
@@ -182,7 +169,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-05-18T08:56:15+00:00"
+            "time": "2019-05-20T07:21:53+00:00"
         }
     ],
     "packages-dev": [],

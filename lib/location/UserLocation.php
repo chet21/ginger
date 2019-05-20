@@ -17,7 +17,10 @@ class UserLocation
     public function getCity($language = null)
     {
         $name = ($language = null || $language = 'en') ? 'name_en': 'name_ru';
-        return $this->response_obj()->city->$name;
+
+        $city_name = ($this->ip == '127.0.0.1') ? 'localhost' : $this->response_obj()->city->$name;
+
+        return $city_name;
     }
 
     public function getTime()

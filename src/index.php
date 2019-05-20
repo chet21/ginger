@@ -16,7 +16,7 @@ if($_COOKIE['lang'] == null){
 }
 require_once __DIR__.'/../vendor/autoload.php';
 
-error_reporting(E_ALL);
+//error_reporting(E_ALL);
 
 
 

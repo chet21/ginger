@@ -12,6 +12,7 @@
   "require": {
     "php": ">=5.5.9",
     "twig/twig": "1.x-dev",
-    "gumlet/php-image-resize": "1.8.*"
+    "shasoft/console":"v1.0.4"
+
   }
 }
