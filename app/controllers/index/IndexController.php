@@ -8,6 +8,6 @@ class IndexController extends BaseIndexController
 
     public function indexAction()
     {
-        echo 'index page';
+        
     }
 }

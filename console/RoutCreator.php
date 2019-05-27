@@ -6,7 +6,7 @@
  * Time: 12:44
  */
 
-namespace Console\Controller\Creator;
+namespace Console\Creator;
 
 
 class RoutCreator

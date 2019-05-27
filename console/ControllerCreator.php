@@ -6,7 +6,7 @@
  * Time: 15:43
  */
 
-namespace Console\Controller\Creator;
+namespace Console\Creator;
 
 
 use Console\Classes\Constructor\ClassConstructor;
