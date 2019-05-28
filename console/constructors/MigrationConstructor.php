@@ -11,7 +11,25 @@ namespace Console\Constructor;
 
 class MigrationConstructor
 {
-        private $body;
+    private $body;
 
-        public function
+
+    public function __destruct()
+    {
+        return $this->body;
+    }
+
+    protected function create()
+    {
+            $this->body = "<?php /n";
+            $this->body = "<?php /n";
+            $this->body = "<?php /n";
+            $this->body = "<?php /n";
+            $this->body = "<?php /n";
+            $this->body = "<?php /n";
+    }
+
+
+
+
 }
