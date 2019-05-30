@@ -11,5 +11,8 @@ namespace Console\Constructor;
 
 class SchemeConstructor
 {
+    public static function add()
+    {
 
+    }
 }

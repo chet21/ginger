@@ -10,15 +10,25 @@ namespace Console\Creator;
 
 
 use Console\Constructor\MigrationConstructor;
+use Console\Constructor\SchemeConstructor;
 
-class MigrationCreator extends MigrationConstructor
+class MigrationCreator
 
 {
-    private $path = __DIR__.'/../var/migrations';
+    private $path = __DIR__ . '/../var/scheme';
+
+    private $miration;
+    private $scheme;
+
+    public function __construct()
+    {
+        $this->miration = new MigrationConstructor();
+        $this->scheme = new SchemeConstructor();
+    }
 
     public function create_migration()
     {
-        $this->
+        $this->miration->create_new_migration();
     }
 
     public function create_scheme()

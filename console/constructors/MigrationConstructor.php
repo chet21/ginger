@@ -11,22 +11,20 @@ namespace Console\Constructor;
 
 class MigrationConstructor
 {
-    private $body;
+    private $path = __DIR__.'/../../app/migration/';
+    private static $name;
 
-
-    public function __destruct()
+    public function __construct($name)
     {
-        return $this->body;
+        $this->name = $name;
     }
 
-    protected function create()
+
+    static function base_construction()
     {
-            $this->body = "<?php /n";
-            $this->body = "<?php /n";
-            $this->body = "<?php /n";
-            $this->body = "<?php /n";
-            $this->body = "<?php /n";
-            $this->body = "<?php /n";
+        return "";
+
+
     }
 
 
