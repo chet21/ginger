@@ -6,9 +6,9 @@
  * Time: 15:53
  */
 
-namespace App\Controllers;
+namespace App\Configuration;
 
-class BaseUserController extends BaseController
+abstract class BaseUserController extends BaseController
 {
     public function __construct()
     {

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Configuration;
 
 use System\Error;
 use Lib\User\User;
 
-class BaseSecureController
+abstract class BaseSecureController
 {
     protected $user;
 

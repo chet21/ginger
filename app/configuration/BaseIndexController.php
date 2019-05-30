@@ -6,10 +6,10 @@
  * Time: 16:27
  */
 
-namespace App\Controllers;
+namespace App\Configuration;
 
 
-class BaseIndexController extends BaseController
+abstract class BaseIndexController extends BaseController
 {
     public function __construct()
     {

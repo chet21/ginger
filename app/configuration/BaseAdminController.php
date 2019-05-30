@@ -6,7 +6,7 @@
  * Time: 7:45
  */
 
-namespace App\Controllers;
+namespace App\Configuration;
 
 use \System\CSRF;
 

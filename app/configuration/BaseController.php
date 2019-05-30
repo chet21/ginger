@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Configuration;
 
 
 use Lib\Location\UserLocation;
