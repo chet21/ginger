@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Configuration\BaseIndexController;
+
 
 class IndexController extends BaseIndexController
 {

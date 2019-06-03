@@ -15,7 +15,8 @@ use Console\Constructor\SchemeConstructor;
 class MigrationCreator
 
 {
-    private $path = __DIR__ . '/../var/scheme';
+    private $path_scheme = __DIR__ . '/../var/scheme';
+    private $path_migration = __DIR__ . '/../app/migration';
 
     private $miration;
     private $scheme;
@@ -38,6 +39,14 @@ class MigrationCreator
 
     public function run_scheme()
     {
+
+    }
+
+    public function newCreator($path, $body)
+    {
+        $new_file = fopen($path.$this->name.'.php', 'w');
+        fwrite($new_file, $body);
+        fclose($new_file);
 
     }
 }

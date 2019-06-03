@@ -12,7 +12,7 @@ namespace Console\Constructor;
 class MigrationConstructor
 {
     private $path = __DIR__.'/../../app/migration/';
-    private static $name;
+    private $name;
 
     public function __construct($name)
     {
@@ -23,8 +23,6 @@ class MigrationConstructor
     static function base_construction()
     {
         return "";
-
-
     }
 
 

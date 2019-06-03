@@ -6,28 +6,15 @@ include_once __DIR__.'/vendor/autoload.php';
 
 use Console\ConsoleMessage;
 
+unset($argv[0]);
 
-$command_run = $argv[1];
-$controller_type = $argv[2];
+$command_run = array_shift($argv);
+$command = explode(':', $command_run);
 
-$x = explode(':', $command_run);
-var_dump($x);
+if(array_shift($command) == 'create'){
 
-if($x[0] == 'create'){
-    $new_controller = new Console\Controller\Creator\ControllerCreator($x[1]);
-
-    if(preg_match('/^-u/', $controller_type)){
-        $new_controller->userCreator();
-    }elseif (preg_match('/^-i/', $controller_type)){
-        $new_controller->indexCreator();
-    }else{
-        throw ConsoleMessage::write(new Exception('Command is wrong'), 'warning');
-    }
-
+    $command_name = 'Console\\Creator\\'.ucfirst(array_shift($command)).'Creator';
+    $new_class = new $command_name($argv);
 }else{
-    echo 'command error';
+    ConsoleMessage::write('Command error', 'danger');
 }
-
-
-
-ConsoleMessage::write(new Exception('Command is wrong'), 'warning');

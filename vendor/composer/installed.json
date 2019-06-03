@@ -109,12 +109,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "571929f263d56590ddd6cf42e860264d26f07e51"
+            "reference": "b7b5f1bac9d37f5ec6870779cce17049fa23da9a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/571929f263d56590ddd6cf42e860264d26f07e51",
-            "reference": "571929f263d56590ddd6cf42e860264d26f07e51",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/b7b5f1bac9d37f5ec6870779cce17049fa23da9a",
+            "reference": "b7b5f1bac9d37f5ec6870779cce17049fa23da9a",
             "shasum": ""
         },
         "require": {
@@ -124,9 +124,9 @@
         "require-dev": {
             "psr/container": "^1.0",
             "symfony/debug": "^2.7",
-            "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
+            "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
         },
-        "time": "2019-05-20T07:21:53+00:00",
+        "time": "2019-06-03T13:28:34+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

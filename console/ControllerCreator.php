@@ -9,57 +9,32 @@
 namespace Console\Creator;
 
 
-use Console\Classes\Constructor\ClassConstructor;
+use Console\Classes\Constructor\ControllerConstructor;
 
-class ControllerCreator extends ClassConstructor
+class ControllerCreator extends BaseCreator
 {
-    private $ic = __DIR__ .'/../app/controllers/index/';
-    private $uc = __DIR__ .'/../app/controllers/user/';
-
     public $name;
+    public $type;
+    public $path;
 
-    public function __construct($name)
+    public function __construct($param)
     {
-        $this->name = $name;
+        $this->name = trim($param[0], '-').'Controller';
+        $this->type = trim($param[1], '-');
+        $this->path = __DIR__ ."/../app/controllers/".$this->type."/";
     }
 
     public function __destruct()
     {
+        $this->create();
         $this->message($this->name);
     }
 
-    public function indexCreator()
+    public function create()
     {
-        if(!$this->checkController($this->ic, $this->name)){
-            $this->newCreator($this->ic, self::indexConstructor($this->name));
+        if(!$this->checkClass($this->path, $this->name)){
+            $this->createNewClass($this->path, new ControllerConstructor($this->name, $this->type));
         }
-    }
-
-    public function userCreator()
-    {
-        if(!$this->checkController($this->uc, $this->name)){
-            $this->newCreator($this->uc, self::userConstructor($this->name));
-        }
-    }
-
-    public function newCreator($path, $body)
-    {
-        $new_file = fopen($path.$this->name.'.php', 'w');
-                    fwrite($new_file, $body);
-                    fclose($new_file);
-
-    }
-
-    private function checkController($path, $className)
-    {
-        $file = file_exists($path.$className.'.php');
-
-        if($file) throw new \Exception('This class already exist');
-    }
-
-    private function message($className)
-    {
-        echo 'A new class '.$className.' has been created.';
     }
 
 }
