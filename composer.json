@@ -11,7 +11,7 @@
 ,
   "require": {
     "php": ">=5.5.9",
-    "twig/twig": "1.x-dev",
+    "twig/twig": "3.11.2",
     "shasoft/console":"v1.0.4"
 
   }
